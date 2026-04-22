@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+      <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+    <link rel="StyleSheet" type="text/css" href="../style.css"/>
+    <link rel="icon" type="image/png" href="../imagens/images.jpg"/>
+<body class="p-formulario">
+    <div class="container-form">
+        <h1>Interesse em Arte Urbana</h1>
+         <video src="../videos/O gigante da arte urbana deixou sua marca em Itu 🎨✨Eduardo Kobra assinou sua obra no primeiro p.mp4" width="925" height="500" controls autoplay style="display: block; margin: 0 auto;" title="Ogigante"></video>
+        <p style="font-size: 50px;">Você apoia o movimento? Conte para a gente!</p>
+
+        <form action="#" method="POST">
+            <div class="campo">
+                <label for="nome">Nome Completo:</label>
+                <input type="text" id="nome" name="nome" placeholder="Digite seu nome..." required>
+            </div>
+
+            <div class="campo">
+                <label>Você iria a uma exposição de arte urbana?</label>
+                <div class="opcoes">
+                    <input type="radio" id="sim" name="iria_exp" value="sim">
+                    <label for="sim">Sim, com certeza!</label>
+                    
+                    <input type="radio" id="talvez" name="iria_exp" value="talvez">
+                    <label for="talvez">Talvez</label>
+                    
+                    <input type="radio" id="nao" name="iria_exp" value="nao">
+                    <label for="nao">Não tenho interesse</label>
+                </div>
+            </div>
+
+            <div class="campo">
+                <label>Como você apoia ou apoiaria a arte urbana?</label>
+                <div class="opcoes-check">
+                    <input type="checkbox" id="visita" name="apoio" value="visita">
+                    <label for="visita">Visitando murais e galerias</label><br>
+                    
+                    <input type="checkbox" id="divulga" name="apoio" value="divulga">
+                    <label for="divulga">Divulgando artistas nas redes sociais</label><br>
+                    
+                    <input type="checkbox" id="financeiro" name="apoio" value="financeiro">
+                    <label for="financeiro">Comprando obras ou financiando projetos</label>
+                </div>
+            </div>
+
+            <div class="campo">
+                <label for="mensagem">Por que a arte urbana é importante para você?</label>
+                <textarea id="mensagem" name="mensagem" rows="5" placeholder="Deixe seu comentário..."></textarea>
+            </div>
+
+            <button type="submit" class="btn-enviar">Enviar Apoio</button>
+        </form>
+    </div>
+
+</body>
+</html>
